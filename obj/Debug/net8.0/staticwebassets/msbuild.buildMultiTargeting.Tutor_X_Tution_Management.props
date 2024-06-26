@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Tutor_X_Tution_Management.props" />
+</Project>
