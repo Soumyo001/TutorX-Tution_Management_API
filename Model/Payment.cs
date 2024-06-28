@@ -12,16 +12,15 @@ namespace Tutor_X_Tution_Management.Model
         [ForeignKey("Session")]
         public int sessionId { get; set; }
 
-        [Required]
+
         public int amount { get; set; }
 
-        [Required]
+    
         public string paymentDate { get; set; } = "";
 
-        [Required]
+     
         public PaymentMethod paymentMethod { get; set; }
 
-        [Required]
         public PaymentStatus paymentStatus { get; set; }  
 
         public Session session { get; set; }

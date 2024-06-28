@@ -11,16 +11,16 @@ namespace Tutor_X_Tution_Management.Model
         [ForeignKey("User")]
         public int userId { get; set; }
 
-        [Required]
+
         public string resourceTitle { get; set; } = "";
 
-        [Required]
+
         public string resourceDescription { get; set; } = "";
 
-        [Required]
+
         public string resourceUrl { get; set; } = "";
 
-        [Required]
+
         public string uploadDate { get; set; } = "";
 
         public User user { get; set; }

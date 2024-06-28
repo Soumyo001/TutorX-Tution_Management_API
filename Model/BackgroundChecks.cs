@@ -12,15 +12,15 @@ namespace Tutor_X_Tution_Management.Model
         [ForeignKey("Tutor")]
         public int tutorId { get; set; }
 
-        [Required]
+
         public TutorBackgroundCheckType backgroundCheckedType { get; set; }
 
-        [Required]
+
         public DateTime checkedDate { get; set; }
 
-        [Required]
+
         public VerificationStatus result {  get; set; }
 
-        public Tutor Tutor { get; set; }
+        public Tutor tutor { get; set; }
     }
 }

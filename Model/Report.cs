@@ -14,10 +14,8 @@ namespace Tutor_X_Tution_Management.Model
         [ForeignKey("Tutor")]
         public int tutorId { get; set; }
 
-        [Required]
         public string reportText { get; set; } = "";
 
-        [Required]
         public string reportDate { get; set; } = "";
 
         public Student student { get; set; }

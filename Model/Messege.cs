@@ -15,10 +15,9 @@ namespace Tutor_X_Tution_Management.Model
         [ForeignKey("Tutor")]
         public int tutorId { get; set; }
 
-        [Required]
-        public string messege { get; set; } = "";
 
-        [Required]
+        public string messegeText { get; set; } = "";
+
         public DateTime timeStamp { get; set; } = DateTime.Now;
         
         public Student student { get; set; }

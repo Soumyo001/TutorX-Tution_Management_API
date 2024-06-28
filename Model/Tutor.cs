@@ -12,25 +12,22 @@ namespace Tutor_X_Tution_Management.Model
         [ForeignKey("User")]
         public int userId { get; set; }
 
-        [Required]
+
         public AvailabilityStatus status { get; set; }
 
-        [Required]
+
         public StudentMedium mediumOfInterest { get; set; }
 
-        [Required]
+
         public StudentTypes expectedStudent { get; set; }
 
-        [Required]
         public SubjectTypes subjectOfInterest { get; set; }
 
-        [Required]
         public int expectedSalary { get; set; }
 
-        [Required]
+
         public ProfessionType profession { get; set; }
 
-        [Required]
         public VerificationStatus verificationStatus { get; set; }
 
         public string tutorSelfDescription { get; set; } = "";

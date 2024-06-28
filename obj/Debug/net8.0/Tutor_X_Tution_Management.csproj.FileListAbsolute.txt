@@ -229,3 +229,4 @@ E:\C# projects\Tutor_X_Tution_Management\obj\Debug\net8.0\refint\Tutor_X_Tution_
 E:\C# projects\Tutor_X_Tution_Management\obj\Debug\net8.0\Tutor_X_Tution_Management.pdb
 E:\C# projects\Tutor_X_Tution_Management\obj\Debug\net8.0\Tutor_X_Tution_Management.genruntimeconfig.cache
 E:\C# projects\Tutor_X_Tution_Management\obj\Debug\net8.0\ref\Tutor_X_Tution_Management.dll
+E:\C# projects\Tutor_X_Tution_Management\obj\Debug\net8.0\Tutor_X_Tution_Management.sourcelink.json

@@ -15,13 +15,10 @@ namespace Tutor_X_Tution_Management.Model
         [ForeignKey("Tutor")]
         public int tutorId { get; set; }
 
-        [Required]
         public string requestDate { get; set; } = "";
 
-        [Required]
         public bool isFromTutor { get; set; }
 
-        [Required]
         public RequestStatus status { get; set; }
 
         public Student student { get; set; }

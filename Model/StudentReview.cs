@@ -14,13 +14,11 @@ namespace Tutor_X_Tution_Management.Model
         [ForeignKey("Tutor")]
         public int tutorId { get; set; }
 
-        [Required]
         public int rating { get; set; } = 0;
 
-        [Required]
         public string reviewText { get; set; } = "";
 
-        [Required]
+ 
         public string reviewDate { get; set; } = "";
 
         public Student student { get; set; }

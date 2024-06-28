@@ -12,13 +12,13 @@ namespace Tutor_X_Tution_Management.Model
         [ForeignKey("User")]
         public int userId { get; set; }
 
-        [Required]
+
         public string firstName { get; set; } = "";
 
-        [Required]
+
         public string lastName { get; set; } = "";
 
-        [Required]
+
         public StudentMedium StudentMedium { get; set; }
 
         public string studentSelfDescription { get; set; } = "";
