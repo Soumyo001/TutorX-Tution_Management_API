@@ -18,8 +18,5 @@ namespace Tutor_X_Tution_Management.Model
 
         public string reportDate { get; set; } = "";
 
-        public Student student { get; set; }
-
-        public Tutor tutor { get; set; }
     }
 }

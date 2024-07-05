@@ -21,7 +21,6 @@ namespace Tutor_X_Tution_Management.Model
  
         public string reviewDate { get; set; } = "";
 
-        public Student student { get; set; }
 
     }
 }

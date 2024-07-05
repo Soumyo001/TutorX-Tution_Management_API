@@ -46,9 +46,6 @@ namespace Tutor_X_Tution_Management.Migrations
 
                     b.HasKey("checkId");
 
-                    b.HasIndex("tutorId")
-                        .IsUnique();
-
                     b.ToTable("background_checks");
                 });
 
@@ -71,10 +68,6 @@ namespace Tutor_X_Tution_Management.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("messegeId");
-
-                    b.HasIndex("studentId");
-
-                    b.HasIndex("tutorId");
 
                     b.ToTable("messege");
                 });
@@ -107,9 +100,6 @@ namespace Tutor_X_Tution_Management.Migrations
 
                     b.HasKey("paymentId");
 
-                    b.HasIndex("sessionId")
-                        .IsUnique();
-
                     b.ToTable("payment");
                 });
 
@@ -136,10 +126,6 @@ namespace Tutor_X_Tution_Management.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("reportId");
-
-                    b.HasIndex("studentId");
-
-                    b.HasIndex("tutorId");
 
                     b.ToTable("report");
                 });
@@ -170,10 +156,6 @@ namespace Tutor_X_Tution_Management.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("requestId");
-
-                    b.HasIndex("studentId");
-
-                    b.HasIndex("tutorId");
 
                     b.ToTable("request");
                 });
@@ -206,8 +188,6 @@ namespace Tutor_X_Tution_Management.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("resourceId");
-
-                    b.HasIndex("userId");
 
                     b.ToTable("resource");
                 });
@@ -243,11 +223,6 @@ namespace Tutor_X_Tution_Management.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("sessionId");
-
-                    b.HasIndex("studentId")
-                        .IsUnique();
-
-                    b.HasIndex("tutorId");
 
                     b.ToTable("session");
                 });
@@ -310,8 +285,6 @@ namespace Tutor_X_Tution_Management.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("studentReviewId");
-
-                    b.HasIndex("studentId");
 
                     b.ToTable("student_review");
                 });
@@ -402,165 +375,6 @@ namespace Tutor_X_Tution_Management.Migrations
                     b.HasKey("userId");
 
                     b.ToTable("user");
-                });
-
-            modelBuilder.Entity("Tutor_X_Tution_Management.Model.BackgroundChecks", b =>
-                {
-                    b.HasOne("Tutor_X_Tution_Management.Model.Tutor", "tutor")
-                        .WithOne("backgroundChecks")
-                        .HasForeignKey("Tutor_X_Tution_Management.Model.BackgroundChecks", "tutorId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("tutor");
-                });
-
-            modelBuilder.Entity("Tutor_X_Tution_Management.Model.Messege", b =>
-                {
-                    b.HasOne("Tutor_X_Tution_Management.Model.Student", "student")
-                        .WithMany("messeges")
-                        .HasForeignKey("studentId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Tutor_X_Tution_Management.Model.Tutor", "tutor")
-                        .WithMany("messeges")
-                        .HasForeignKey("tutorId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("student");
-
-                    b.Navigation("tutor");
-                });
-
-            modelBuilder.Entity("Tutor_X_Tution_Management.Model.Payment", b =>
-                {
-                    b.HasOne("Tutor_X_Tution_Management.Model.Session", "session")
-                        .WithOne("payment")
-                        .HasForeignKey("Tutor_X_Tution_Management.Model.Payment", "sessionId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("session");
-                });
-
-            modelBuilder.Entity("Tutor_X_Tution_Management.Model.Report", b =>
-                {
-                    b.HasOne("Tutor_X_Tution_Management.Model.Student", "student")
-                        .WithMany("reports")
-                        .HasForeignKey("studentId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Tutor_X_Tution_Management.Model.Tutor", "tutor")
-                        .WithMany("reports")
-                        .HasForeignKey("tutorId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("student");
-
-                    b.Navigation("tutor");
-                });
-
-            modelBuilder.Entity("Tutor_X_Tution_Management.Model.Request", b =>
-                {
-                    b.HasOne("Tutor_X_Tution_Management.Model.Student", "student")
-                        .WithMany("requests")
-                        .HasForeignKey("studentId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Tutor_X_Tution_Management.Model.Tutor", "tutor")
-                        .WithMany("requests")
-                        .HasForeignKey("tutorId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("student");
-
-                    b.Navigation("tutor");
-                });
-
-            modelBuilder.Entity("Tutor_X_Tution_Management.Model.Resource", b =>
-                {
-                    b.HasOne("Tutor_X_Tution_Management.Model.User", "user")
-                        .WithMany("resources")
-                        .HasForeignKey("userId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("user");
-                });
-
-            modelBuilder.Entity("Tutor_X_Tution_Management.Model.Session", b =>
-                {
-                    b.HasOne("Tutor_X_Tution_Management.Model.Student", "student")
-                        .WithOne("session")
-                        .HasForeignKey("Tutor_X_Tution_Management.Model.Session", "studentId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Tutor_X_Tution_Management.Model.Tutor", "tutor")
-                        .WithMany("sessions")
-                        .HasForeignKey("tutorId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("student");
-
-                    b.Navigation("tutor");
-                });
-
-            modelBuilder.Entity("Tutor_X_Tution_Management.Model.StudentReview", b =>
-                {
-                    b.HasOne("Tutor_X_Tution_Management.Model.Student", "student")
-                        .WithMany("studentReviews")
-                        .HasForeignKey("studentId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("student");
-                });
-
-            modelBuilder.Entity("Tutor_X_Tution_Management.Model.Session", b =>
-                {
-                    b.Navigation("payment")
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("Tutor_X_Tution_Management.Model.Student", b =>
-                {
-                    b.Navigation("messeges");
-
-                    b.Navigation("reports");
-
-                    b.Navigation("requests");
-
-                    b.Navigation("session")
-                        .IsRequired();
-
-                    b.Navigation("studentReviews");
-                });
-
-            modelBuilder.Entity("Tutor_X_Tution_Management.Model.Tutor", b =>
-                {
-                    b.Navigation("backgroundChecks")
-                        .IsRequired();
-
-                    b.Navigation("messeges");
-
-                    b.Navigation("reports");
-
-                    b.Navigation("requests");
-
-                    b.Navigation("sessions");
-                });
-
-            modelBuilder.Entity("Tutor_X_Tution_Management.Model.User", b =>
-                {
-                    b.Navigation("resources");
                 });
 #pragma warning restore 612, 618
         }

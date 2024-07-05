@@ -23,9 +23,18 @@ namespace Tutor_X_Tution_Management.Controllers
 
         // GET: api/StudentReviews
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<StudentReview>>> Getstudent_review()
+        public async Task<ActionResult<IEnumerable<StudentReview>>> Getstudent_review([FromQuery] int? studentId, [FromQuery] int? tutorId)
         {
-            return await _context.student_review.ToListAsync();
+            var query = _context.student_review.AsQueryable();
+            if (studentId.HasValue)
+            {
+                query = query.Where(p => p.studentId == studentId.Value);
+            }
+            if (tutorId.HasValue)
+            {
+                query = query.Where(p => p.tutorId == tutorId.Value);
+            }
+            return await query.ToListAsync();
         }
 
         // GET: api/StudentReviews/5

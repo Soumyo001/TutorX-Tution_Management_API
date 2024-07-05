@@ -26,11 +26,5 @@ namespace Tutor_X_Tution_Management.Model
 
  
         public SessionStatus sessionStatus { get; set; }
-
-        public Student student { get; set; }
-
-        public Tutor tutor { get; set; }
-
-        public Payment payment { get; set; }
     }
 }

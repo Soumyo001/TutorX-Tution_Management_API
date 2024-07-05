@@ -23,9 +23,18 @@ namespace Tutor_X_Tution_Management.Controllers
 
         // GET: api/Reports
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Report>>> Getreport()
+        public async Task<ActionResult<IEnumerable<Report>>> Getreport([FromQuery] int? studentId, [FromQuery] int? tutorId)
         {
-            return await _context.report.ToListAsync();
+            var query = _context.report.AsQueryable();
+            if (studentId.HasValue)
+            {
+                query = query.Where(p => p.studentId == studentId.Value);
+            }
+            if (tutorId.HasValue)
+            {
+                query = query.Where(p => p.tutorId == tutorId.Value);
+            }
+            return await query.ToListAsync();
         }
 
         // GET: api/Reports/5

@@ -19,9 +19,5 @@ namespace Tutor_X_Tution_Management.Model
         public string messegeText { get; set; } = "";
 
         public DateTime timeStamp { get; set; } = DateTime.Now;
-        
-        public Student student { get; set; }
-
-        public Tutor tutor { get; set; }
     }
 }

@@ -23,9 +23,18 @@ namespace Tutor_X_Tution_Management.Controllers
 
         // GET: api/Sessions
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Session>>> Getsession()
+        public async Task<ActionResult<IEnumerable<Session>>> Getsession([FromQuery] int? tutorId, [FromQuery] int? studentId)
         {
-            return await _context.session.ToListAsync();
+            var query = _context.session.AsQueryable();
+            if (tutorId.HasValue)
+            {
+                query = query.Where(p => p.tutorId == tutorId.Value);
+            }
+            if (studentId.HasValue)
+            {
+                query = query.Where(p => p.studentId == studentId.Value);
+            }
+            return await query.ToListAsync();
         }
 
         // GET: api/Sessions/5

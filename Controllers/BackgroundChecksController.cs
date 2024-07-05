@@ -23,9 +23,14 @@ namespace Tutor_X_Tution_Management.Controllers
 
         // GET: api/BackgroundChecks
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<BackgroundChecks>>> Getbackground_checks()
+        public async Task<ActionResult<IEnumerable<BackgroundChecks>>> Getbackground_checks([FromQuery] int? tutorId)
         {
-            return await _context.background_checks.ToListAsync();
+            var query = _context.background_checks.AsQueryable();
+            if (tutorId.HasValue)
+            {
+                query = query.Where(p => p.tutorId == tutorId.Value);
+            }
+            return await query.ToListAsync();
         }
 
         // GET: api/BackgroundChecks/5

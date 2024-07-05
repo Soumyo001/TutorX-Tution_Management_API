@@ -23,9 +23,14 @@ namespace Tutor_X_Tution_Management.Controllers
 
         // GET: api/Students
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Student>>> Getstudent()
+        public async Task<ActionResult<IEnumerable<Student>>> Getstudent([FromQuery] int? userId)
         {
-            return await _context.student.ToListAsync();
+            var query = _context.student.AsQueryable();
+            if (userId.HasValue)
+            {
+                query = query.Where(p => p.userId == userId.Value);
+            }
+            return await query.ToListAsync();
         }
 
         // GET: api/Students/5

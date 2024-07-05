@@ -23,9 +23,14 @@ namespace Tutor_X_Tution_Management.Controllers
 
         // GET: api/Payments
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Payment>>> Getpayment()
+        public async Task<ActionResult<IEnumerable<Payment>>> Getpayment([FromQuery] int? sessionId)
         {
-            return await _context.payment.ToListAsync();
+            var query = _context.payment.AsQueryable();
+            if (sessionId.HasValue)
+            {
+                query = query.Where(p => p.sessionId == sessionId.Value);
+            }
+            return await query.ToListAsync();
         }
 
         // GET: api/Payments/5

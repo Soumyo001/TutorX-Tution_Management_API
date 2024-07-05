@@ -24,7 +24,6 @@ namespace Tutor_X_Tution_Management.Model
 
         public UserCategory type { get; set; }
 
-        public ICollection<Resource> resources { get; set; }
 
     }
 }

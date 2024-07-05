@@ -21,6 +21,5 @@ namespace Tutor_X_Tution_Management.Model
 
         public VerificationStatus result {  get; set; }
 
-        public Tutor tutor { get; set; }
     }
 }

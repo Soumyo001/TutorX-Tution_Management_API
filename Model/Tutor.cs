@@ -32,14 +32,5 @@ namespace Tutor_X_Tution_Management.Model
 
         public string tutorSelfDescription { get; set; } = "";
 
-        public BackgroundChecks backgroundChecks { get; set; }
-
-        public ICollection<Session> sessions { get; set;}
-
-        public ICollection<Request> requests { get; set; }
-
-        public ICollection<Report> reports { get; set; }
-
-        public ICollection<Messege> messeges { get; set; }
     }
 }

@@ -23,9 +23,14 @@ namespace Tutor_X_Tution_Management.Controllers
 
         // GET: api/Resources
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Resource>>> Getresource()
+        public async Task<ActionResult<IEnumerable<Resource>>> Getresource([FromQuery] int? userId)
         {
-            return await _context.resource.ToListAsync();
+            var query = _context.resource.AsQueryable();
+
+            if (userId.HasValue) {
+                query = query.Where(p => p.userId == userId.Value);
+            }
+            return await query.ToListAsync();
         }
 
         // GET: api/Resources/5

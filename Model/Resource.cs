@@ -23,7 +23,6 @@ namespace Tutor_X_Tution_Management.Model
 
         public string uploadDate { get; set; } = "";
 
-        public User user { get; set; }
 
     }
 }
