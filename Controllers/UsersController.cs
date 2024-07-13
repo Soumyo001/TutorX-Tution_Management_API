@@ -23,9 +23,14 @@ namespace Tutor_X_Tution_Management.Controllers
 
         // GET: api/Users
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<User>>> Getuser()
+        public async Task<ActionResult<IEnumerable<User>>> Getuser([FromQuery] string email)
         {
-            return await _context.user.ToListAsync();
+            var query = _context.user.AsQueryable();
+            if (email != null)
+            {
+                query = query.Where(p => p.email == email);
+            }
+            return await query.ToListAsync();
         }
 
         // GET: api/Users/5

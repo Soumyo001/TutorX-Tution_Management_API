@@ -20,6 +20,8 @@ namespace Tutor_X_Tution_Management.Data
         public DbSet<Report> report { get; set; }
         public DbSet<Request> request { get; set; }
         public DbSet<BackgroundChecks> background_checks { get; set; }
+        public DbSet<StudentPost> student_post { get; set; }
+        public DbSet<TutorPost> tutor_post { get; set; } 
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -63,9 +65,35 @@ namespace Tutor_X_Tution_Management.Data
             modelBuilder.Entity<Session>(entity=>
             {
                 entity.Property(e=>e.sessionStatus)
+                .HasConversion<string>();   
+            });
+
+            modelBuilder.Entity<StudentPost>(entity =>
+            {
+                entity.Property(e => e.days)
                 .HasConversion<string>();
 
-             
+                entity.Property(e => e.studentMedium)
+                .HasConversion<string>();
+
+                entity.Property(e => e.subjectTypes)
+                .HasConversion<string>();
+
+                entity.Property(e => e.studentTypes)
+                .HasConversion<string>();
+
+            });
+
+            modelBuilder.Entity<TutorPost>(entity =>
+            {
+                entity.Property(e => e.subjectOfInterest)
+                .HasConversion<string>();
+
+                entity.Property(e => e.expectedStudent)
+                .HasConversion<string>();
+
+                entity.Property(e => e.studentMedium)
+                .HasConversion<string>();
             });
 
             modelBuilder.Entity<Payment>(entity => 

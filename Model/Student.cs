@@ -18,6 +18,9 @@ namespace Tutor_X_Tution_Management.Model
 
         public string lastName { get; set; } = "";
 
+#nullable enable
+        public string? imagePath { get; set; } = null;
+
 
         public StudentMedium StudentMedium { get; set; }
 

@@ -17,7 +17,7 @@ namespace Tutor_X_Tution_Management.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.6")
+                .HasAnnotation("ProductVersion", "8.0.7")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
             MySqlModelBuilderExtensions.AutoIncrementColumns(modelBuilder);
@@ -55,7 +55,6 @@ namespace Tutor_X_Tution_Management.Migrations
                         .HasColumnType("varchar(255)");
 
                     b.Property<string>("messegeText")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<int>("studentId")
@@ -84,7 +83,6 @@ namespace Tutor_X_Tution_Management.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("paymentDate")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("paymentMethod")
@@ -112,11 +110,9 @@ namespace Tutor_X_Tution_Management.Migrations
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("reportId"));
 
                     b.Property<string>("reportDate")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("reportText")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<int>("studentId")
@@ -142,7 +138,6 @@ namespace Tutor_X_Tution_Management.Migrations
                         .HasColumnType("tinyint(1)");
 
                     b.Property<string>("requestDate")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("status")
@@ -169,19 +164,15 @@ namespace Tutor_X_Tution_Management.Migrations
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("resourceId"));
 
                     b.Property<string>("resourceDescription")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("resourceTitle")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("resourceUrl")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("uploadDate")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<int>("userId")
@@ -201,11 +192,9 @@ namespace Tutor_X_Tution_Management.Migrations
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("sessionId"));
 
                     b.Property<string>("duration")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("endDate")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("sessionStatus")
@@ -213,7 +202,6 @@ namespace Tutor_X_Tution_Management.Migrations
                         .HasColumnType("longtext");
 
                     b.Property<string>("startDate")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<int>("studentId")
@@ -240,11 +228,12 @@ namespace Tutor_X_Tution_Management.Migrations
                         .HasColumnType("longtext");
 
                     b.Property<string>("firstName")
-                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("imagePath")
                         .HasColumnType("longtext");
 
                     b.Property<string>("lastName")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("studentSelfDescription")
@@ -259,6 +248,50 @@ namespace Tutor_X_Tution_Management.Migrations
                     b.ToTable("student");
                 });
 
+            modelBuilder.Entity("Tutor_X_Tution_Management.Model.StudentPost", b =>
+                {
+                    b.Property<int>("studentPostId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("studentPostId"));
+
+                    b.Property<string>("days")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("education")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("fullName")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("location")
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("salary")
+                        .HasColumnType("int");
+
+                    b.Property<int>("studentId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("studentMedium")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("studentTypes")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("subjectTypes")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.HasKey("studentPostId");
+
+                    b.ToTable("student_post");
+                });
+
             modelBuilder.Entity("Tutor_X_Tution_Management.Model.StudentReview", b =>
                 {
                     b.Property<int>("studentReviewId")
@@ -271,11 +304,9 @@ namespace Tutor_X_Tution_Management.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("reviewDate")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("reviewText")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<int>("studentId")
@@ -302,6 +333,9 @@ namespace Tutor_X_Tution_Management.Migrations
 
                     b.Property<string>("expectedStudent")
                         .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("imagePath")
                         .HasColumnType("longtext");
 
                     b.Property<string>("mediumOfInterest")
@@ -336,6 +370,43 @@ namespace Tutor_X_Tution_Management.Migrations
                     b.ToTable("tutor");
                 });
 
+            modelBuilder.Entity("Tutor_X_Tution_Management.Model.TutorPost", b =>
+                {
+                    b.Property<int>("tutorPostId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("tutorPostId"));
+
+                    b.Property<string>("bio")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("expectedStudent")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("fullName")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("location")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("studentMedium")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("subjectOfInterest")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("tutorId")
+                        .HasColumnType("int");
+
+                    b.HasKey("tutorPostId");
+
+                    b.ToTable("tutor_post");
+                });
+
             modelBuilder.Entity("Tutor_X_Tution_Management.Model.User", b =>
                 {
                     b.Property<int>("userId")
@@ -345,27 +416,21 @@ namespace Tutor_X_Tution_Management.Migrations
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("userId"));
 
                     b.Property<string>("education")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("email")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("fullName")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("location")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("password")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("phoneNumber")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("type")

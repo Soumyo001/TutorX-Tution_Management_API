@@ -3,43 +3,47 @@
   "WorkspaceRootPath": "E:\\C# projects\\Tutor_X_Tution_Management\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|e:\\c# projects\\tutor_x_tution_management\\model\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|solutionrelative:model\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|e:\\c# projects\\tutor_x_tution_management\\controllers\\tutorpostscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|solutionrelative:controllers\\tutorpostscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|e:\\c# projects\\tutor_x_tution_management\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|solutionrelative:model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|E:\\C# projects\\Tutor_X_Tution_Management\\controllers\\studentpostscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|solutionrelative:controllers\\studentpostscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|e:\\c# projects\\tutor_x_tution_management\\data\\apidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|solutionrelative:data\\apidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|E:\\C# projects\\Tutor_X_Tution_Management\\model\\tutorpost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|solutionrelative:model\\tutorpost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|e:\\c# projects\\tutor_x_tution_management\\model\\tutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|E:\\C# projects\\Tutor_X_Tution_Management\\model\\studentpost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|solutionrelative:model\\studentpost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|E:\\C# projects\\Tutor_X_Tution_Management\\model\\tutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|solutionrelative:model\\tutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|e:\\c# projects\\tutor_x_tution_management\\model\\studentreview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|E:\\C# projects\\Tutor_X_Tution_Management\\model\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|solutionrelative:model\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|E:\\C# projects\\Tutor_X_Tution_Management\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|solutionrelative:model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|E:\\C# projects\\Tutor_X_Tution_Management\\data\\apidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|solutionrelative:data\\apidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|E:\\C# projects\\Tutor_X_Tution_Management\\model\\studentreview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|solutionrelative:model\\studentreview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|e:\\c# projects\\tutor_x_tution_management\\model\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|E:\\C# projects\\Tutor_X_Tution_Management\\model\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|solutionrelative:model\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|e:\\c# projects\\tutor_x_tution_management\\model\\resource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|solutionrelative:model\\resource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|e:\\c# projects\\tutor_x_tution_management\\model\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|solutionrelative:model\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|e:\\c# projects\\tutor_x_tution_management\\model\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|solutionrelative:model\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|e:\\c# projects\\tutor_x_tution_management\\model\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|E:\\C# projects\\Tutor_X_Tution_Management\\model\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|solutionrelative:model\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -47,8 +51,24 @@
       "RelativeMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|solutionrelative:model\\messege.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|e:\\c# projects\\tutor_x_tution_management\\model\\backgroundchecks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|E:\\C# projects\\Tutor_X_Tution_Management\\model\\resource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|solutionrelative:model\\resource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|E:\\C# projects\\Tutor_X_Tution_Management\\model\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|solutionrelative:model\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|E:\\C# projects\\Tutor_X_Tution_Management\\model\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|solutionrelative:model\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|E:\\C# projects\\Tutor_X_Tution_Management\\model\\backgroundchecks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|solutionrelative:model\\backgroundchecks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|E:\\C# projects\\Tutor_X_Tution_Management\\Migrations\\20240713073915_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{562F32B5-B042-4CAD-B1D2-97EC91555D4F}|Tutor_X_Tution_Management.csproj|solutionrelative:Migrations\\20240713073915_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 363,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,46 +90,85 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "20240713073915_InitialCreate.cs",
+              "DocumentMoniker": "E:\\C# projects\\Tutor_X_Tution_Management\\Migrations\\20240713073915_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240713073915_InitialCreate.cs",
+              "ToolTip": "E:\\C# projects\\Tutor_X_Tution_Management\\Migrations\\20240713073915_InitialCreate.cs",
+              "RelativeToolTip": "Migrations\\20240713073915_InitialCreate.cs",
+              "ViewState": "AQIAAPUAAAAAAAAAAAAAAKoAAABUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-13T07:39:15.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StudentPostsController.cs",
+              "DocumentMoniker": "E:\\C# projects\\Tutor_X_Tution_Management\\Controllers\\StudentPostsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\StudentPostsController.cs",
+              "ToolTip": "E:\\C# projects\\Tutor_X_Tution_Management\\Controllers\\StudentPostsController.cs",
+              "RelativeToolTip": "Controllers\\StudentPostsController.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAIwDEAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-13T07:22:25.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TutorPostsController.cs",
+              "DocumentMoniker": "E:\\C# projects\\Tutor_X_Tution_Management\\Controllers\\TutorPostsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TutorPostsController.cs",
+              "ToolTip": "E:\\C# projects\\Tutor_X_Tution_Management\\Controllers\\TutorPostsController.cs",
+              "RelativeToolTip": "Controllers\\TutorPostsController.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAIwCAAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-13T07:22:51.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "TutorPost.cs",
+              "DocumentMoniker": "E:\\C# projects\\Tutor_X_Tution_Management\\Model\\TutorPost.cs",
+              "RelativeDocumentMoniker": "Model\\TutorPost.cs",
+              "ToolTip": "E:\\C# projects\\Tutor_X_Tution_Management\\Model\\TutorPost.cs",
+              "RelativeToolTip": "Model\\TutorPost.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-13T06:50:10.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StudentPost.cs",
+              "DocumentMoniker": "E:\\C# projects\\Tutor_X_Tution_Management\\Model\\StudentPost.cs",
+              "RelativeDocumentMoniker": "Model\\StudentPost.cs",
+              "ToolTip": "E:\\C# projects\\Tutor_X_Tution_Management\\Model\\StudentPost.cs",
+              "RelativeToolTip": "Model\\StudentPost.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-13T06:37:29.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "apiDbContext.cs",
               "DocumentMoniker": "E:\\C# projects\\Tutor_X_Tution_Management\\Data\\apiDbContext.cs",
               "RelativeDocumentMoniker": "Data\\apiDbContext.cs",
               "ToolTip": "E:\\C# projects\\Tutor_X_Tution_Management\\Data\\apiDbContext.cs",
               "RelativeToolTip": "Data\\apiDbContext.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAEUAAAAAAAAAAADwv18AAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-05T16:58:09.945Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "User.cs",
-              "DocumentMoniker": "E:\\C# projects\\Tutor_X_Tution_Management\\Model\\User.cs",
-              "RelativeDocumentMoniker": "Model\\User.cs",
-              "ToolTip": "E:\\C# projects\\Tutor_X_Tution_Management\\Model\\User.cs",
-              "RelativeToolTip": "Model\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-05T16:58:07.621Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Tutor.cs",
-              "DocumentMoniker": "E:\\C# projects\\Tutor_X_Tution_Management\\Model\\Tutor.cs",
-              "RelativeDocumentMoniker": "Model\\Tutor.cs",
-              "ToolTip": "E:\\C# projects\\Tutor_X_Tution_Management\\Model\\Tutor.cs",
-              "RelativeToolTip": "Model\\Tutor.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-05T16:58:07.092Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "StudentReview.cs",
               "DocumentMoniker": "E:\\C# projects\\Tutor_X_Tution_Management\\Model\\StudentReview.cs",
               "RelativeDocumentMoniker": "Model\\StudentReview.cs",
@@ -122,33 +181,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "Tutor.cs",
+              "DocumentMoniker": "E:\\C# projects\\Tutor_X_Tution_Management\\Model\\Tutor.cs",
+              "RelativeDocumentMoniker": "Model\\Tutor.cs",
+              "ToolTip": "E:\\C# projects\\Tutor_X_Tution_Management\\Model\\Tutor.cs",
+              "RelativeToolTip": "Model\\Tutor.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAD4vxoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-05T16:58:07.092Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Student.cs",
               "DocumentMoniker": "E:\\C# projects\\Tutor_X_Tution_Management\\Model\\Student.cs",
               "RelativeDocumentMoniker": "Model\\Student.cs",
               "ToolTip": "E:\\C# projects\\Tutor_X_Tution_Management\\Model\\Student.cs",
               "RelativeToolTip": "Model\\Student.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAYAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-05T16:58:06.015Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\C# projects\\Tutor_X_Tution_Management\\Model\\User.cs",
+              "RelativeDocumentMoniker": "Model\\User.cs",
+              "ToolTip": "E:\\C# projects\\Tutor_X_Tution_Management\\Model\\User.cs",
+              "RelativeToolTip": "Model\\User.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABAAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-05T16:58:07.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Session.cs",
               "DocumentMoniker": "E:\\C# projects\\Tutor_X_Tution_Management\\Model\\Session.cs",
               "RelativeDocumentMoniker": "Model\\Session.cs",
               "ToolTip": "E:\\C# projects\\Tutor_X_Tution_Management\\Model\\Session.cs",
               "RelativeToolTip": "Model\\Session.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-05T16:58:04.842Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "Resource.cs",
               "DocumentMoniker": "E:\\C# projects\\Tutor_X_Tution_Management\\Model\\Resource.cs",
               "RelativeDocumentMoniker": "Model\\Resource.cs",
@@ -161,7 +246,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "Request.cs",
               "DocumentMoniker": "E:\\C# projects\\Tutor_X_Tution_Management\\Model\\Request.cs",
               "RelativeDocumentMoniker": "Model\\Request.cs",
@@ -174,7 +259,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "Report.cs",
               "DocumentMoniker": "E:\\C# projects\\Tutor_X_Tution_Management\\Model\\Report.cs",
               "RelativeDocumentMoniker": "Model\\Report.cs",
@@ -187,7 +272,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Payment.cs",
               "DocumentMoniker": "E:\\C# projects\\Tutor_X_Tution_Management\\Model\\Payment.cs",
               "RelativeDocumentMoniker": "Model\\Payment.cs",
@@ -200,7 +285,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "BackgroundChecks.cs",
               "DocumentMoniker": "E:\\C# projects\\Tutor_X_Tution_Management\\Model\\BackgroundChecks.cs",
               "RelativeDocumentMoniker": "Model\\BackgroundChecks.cs",
@@ -213,7 +298,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Messege.cs",
               "DocumentMoniker": "E:\\C# projects\\Tutor_X_Tution_Management\\Model\\Messege.cs",
               "RelativeDocumentMoniker": "Model\\Messege.cs",

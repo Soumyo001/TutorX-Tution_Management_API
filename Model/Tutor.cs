@@ -25,6 +25,9 @@ namespace Tutor_X_Tution_Management.Model
 
         public int expectedSalary { get; set; }
 
+#nullable enable
+        public string? imagePath { get; set; } = null;
+
 
         public ProfessionType profession { get; set; }
 

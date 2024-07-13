@@ -230,3 +230,4 @@ E:\C# projects\Tutor_X_Tution_Management\obj\Debug\net8.0\Tutor_X_Tution_Managem
 E:\C# projects\Tutor_X_Tution_Management\obj\Debug\net8.0\Tutor_X_Tution_Management.genruntimeconfig.cache
 E:\C# projects\Tutor_X_Tution_Management\obj\Debug\net8.0\ref\Tutor_X_Tution_Management.dll
 E:\C# projects\Tutor_X_Tution_Management\obj\Debug\net8.0\Tutor_X_Tution_Management.sourcelink.json
+E:\C# projects\Tutor_X_Tution_Management\bin\Debug\net8.0\System.Text.Json.dll
