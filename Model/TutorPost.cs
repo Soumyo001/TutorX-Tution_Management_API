@@ -18,10 +18,12 @@ namespace Tutor_X_Tution_Management.Model
 
         public string location { get; set; } = "";
 
-        public SubjectTypes subjectOfInterest { get; set; }
+        public string description { get; set; } = "";
+
+        public SubjectTypes subjectTypes { get; set; }
 
         public StudentMedium studentMedium { get; set; }
 
-        public StudentTypes expectedStudent { get; set; }
+        public StudentTypes studentTypes { get; set; }
     }
 }

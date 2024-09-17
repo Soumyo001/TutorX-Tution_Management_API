@@ -25,10 +25,17 @@ namespace Tutor_X_Tution_Management.Controllers
 #nullable enable
         // GET: api/TutorPosts
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<TutorPost>>> Gettutor_post([FromQuery] string? location,
+        public async Task<ActionResult<IEnumerable<TutorPost>>> Gettutor_post(
+            [FromQuery] int? tutorId,
+            [FromQuery] string? location,
           [FromQuery] StudentMedium? studentMedium, [FromQuery] SubjectTypes? subjectTypes, [FromQuery] StudentTypes? studentTypes)
         {
             var query=_context.tutor_post.AsQueryable();
+
+            if (tutorId.HasValue)
+            {
+                query=query.Where(p=>p.tutorId== tutorId);
+            }
 
             if (location != null)
             {
@@ -43,12 +50,12 @@ namespace Tutor_X_Tution_Management.Controllers
 
             if (subjectTypes != null)
             {
-                query = query.Where(p => p.subjectOfInterest == subjectTypes);
+                query = query.Where(p => p.subjectTypes == subjectTypes);
             }
 
             if (studentTypes != null)
             {
-                query = query.Where(p => p.expectedStudent == studentTypes);
+                query = query.Where(p => p.studentTypes == studentTypes);
             }
 
             return await query.ToListAsync();

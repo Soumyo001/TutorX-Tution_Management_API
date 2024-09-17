@@ -9,17 +9,17 @@ namespace Tutor_X_Tution_Management.Model
         [Key]
         public int requestId { get; set; }
 
-        [ForeignKey("Student")]
-        public int studentId { get; set; }
+        [ForeignKey("User")]
+        public int uidFrom { get; set; }
 
-        [ForeignKey("Tutor")]
-        public int tutorId { get; set; }
+        [ForeignKey("User")]
+        public int uidTo { get; set; }
 
         public string requestDate { get; set; } = "";
 
         public bool isFromTutor { get; set; }
 
-        public RequestStatus status { get; set; }
+        public RequestStatus status { get; set; } = RequestStatus.pending;
 
     }
 }

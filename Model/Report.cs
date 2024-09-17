@@ -8,11 +8,11 @@ namespace Tutor_X_Tution_Management.Model
         [Key]
         public int reportId { get; set; }
 
-        [ForeignKey("Student")]
-        public int studentId { get; set; }
+        [ForeignKey("User")]
+        public int uidFrom { get; set; }
 
-        [ForeignKey("Tutor")]
-        public int tutorId { get; set; }
+        [ForeignKey("User")]
+        public int uidTo { get; set; }
 
         public string reportText { get; set; } = "";
 

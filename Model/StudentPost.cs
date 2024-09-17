@@ -20,6 +20,8 @@ namespace Tutor_X_Tution_Management.Model
 
         public string education { get; set; } = "";
 
+        public string description { get; set; } = "";
+
         public StudentMedium studentMedium { get; set; } 
 
         public StudentTypes studentTypes { get; set; }

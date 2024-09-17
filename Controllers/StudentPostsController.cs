@@ -24,10 +24,17 @@ namespace Tutor_X_Tution_Management.Controllers
 #nullable enable
         // GET: api/StudentPosts
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<StudentPost>>> Getstudent_post([FromQuery] string? location,
+        public async Task<ActionResult<IEnumerable<StudentPost>>> Getstudent_post(
+            [FromQuery] int? studentId,
+            [FromQuery] string? location,
           [FromQuery] StudentMedium? studentMedium, [FromQuery] StudentTypes? studentTypes, [FromQuery] SubjectTypes? subjectTypes)
         {
             var query = _context.student_post.AsQueryable();
+
+            if (studentId.HasValue)
+            {
+                query = query.Where(p => p.studentId == studentId);
+            }
 
             if(location!=null)
             {

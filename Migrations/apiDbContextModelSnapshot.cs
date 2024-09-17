@@ -57,13 +57,13 @@ namespace Tutor_X_Tution_Management.Migrations
                     b.Property<string>("messegeText")
                         .HasColumnType("longtext");
 
-                    b.Property<int>("studentId")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("timeStamp")
                         .HasColumnType("datetime(6)");
 
-                    b.Property<int>("tutorId")
+                    b.Property<int>("uidFrom")
+                        .HasColumnType("int");
+
+                    b.Property<int>("uidTo")
                         .HasColumnType("int");
 
                     b.HasKey("messegeId");
@@ -115,10 +115,10 @@ namespace Tutor_X_Tution_Management.Migrations
                     b.Property<string>("reportText")
                         .HasColumnType("longtext");
 
-                    b.Property<int>("studentId")
+                    b.Property<int>("uidFrom")
                         .HasColumnType("int");
 
-                    b.Property<int>("tutorId")
+                    b.Property<int>("uidTo")
                         .HasColumnType("int");
 
                     b.HasKey("reportId");
@@ -144,10 +144,10 @@ namespace Tutor_X_Tution_Management.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<int>("studentId")
+                    b.Property<int>("uidFrom")
                         .HasColumnType("int");
 
-                    b.Property<int>("tutorId")
+                    b.Property<int>("uidTo")
                         .HasColumnType("int");
 
                     b.HasKey("requestId");
@@ -258,6 +258,9 @@ namespace Tutor_X_Tution_Management.Migrations
 
                     b.Property<string>("days")
                         .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("description")
                         .HasColumnType("longtext");
 
                     b.Property<string>("education")
@@ -381,8 +384,7 @@ namespace Tutor_X_Tution_Management.Migrations
                     b.Property<string>("bio")
                         .HasColumnType("longtext");
 
-                    b.Property<string>("expectedStudent")
-                        .IsRequired()
+                    b.Property<string>("description")
                         .HasColumnType("longtext");
 
                     b.Property<string>("fullName")
@@ -395,7 +397,11 @@ namespace Tutor_X_Tution_Management.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<string>("subjectOfInterest")
+                    b.Property<string>("studentTypes")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("subjectTypes")
                         .IsRequired()
                         .HasColumnType("longtext");
 
@@ -436,6 +442,9 @@ namespace Tutor_X_Tution_Management.Migrations
                     b.Property<string>("type")
                         .IsRequired()
                         .HasColumnType("longtext");
+
+                    b.Property<int>("userReports")
+                        .HasColumnType("int");
 
                     b.HasKey("userId");
 

@@ -22,6 +22,8 @@ namespace Tutor_X_Tution_Management.Model
 
         public string location { get; set; } = "";
 
+        public int userReports { get; set; } = 0;
+
         public UserCategory type { get; set; }
 
 

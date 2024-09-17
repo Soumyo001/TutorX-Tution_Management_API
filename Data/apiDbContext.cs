@@ -86,10 +86,10 @@ namespace Tutor_X_Tution_Management.Data
 
             modelBuilder.Entity<TutorPost>(entity =>
             {
-                entity.Property(e => e.subjectOfInterest)
+                entity.Property(e => e.subjectTypes)
                 .HasConversion<string>();
 
-                entity.Property(e => e.expectedStudent)
+                entity.Property(e => e.studentTypes)
                 .HasConversion<string>();
 
                 entity.Property(e => e.studentMedium)

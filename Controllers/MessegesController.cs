@@ -23,16 +23,16 @@ namespace Tutor_X_Tution_Management.Controllers
 
         // GET: api/Messeges
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Messege>>> Getmessege([FromQuery] int? studentId, [FromQuery] int? tutorId)
+        public async Task<ActionResult<IEnumerable<Messege>>> Getmessege([FromQuery] int? uidFrom, [FromQuery] int? uidTo)
         {
             var query = _context.messege.AsQueryable();
-            if (studentId.HasValue)
+            if (uidFrom.HasValue)
             {
-                query = query.Where(p => p.studentId == studentId.Value);
+                query = query.Where(p => p.uidFrom == uidFrom.Value);
             }
-            if (tutorId.HasValue)
+            if (uidTo.HasValue)
             {
-                query = query.Where(p => p.tutorId == tutorId.Value);
+                query = query.Where(p => p.uidTo == uidTo.Value);
             }
             return await query.ToListAsync();
         }
